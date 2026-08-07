@@ -1,0 +1,245 @@
+/* ========================================
+   STMF - Footer
+======================================== */
+
+.footer {
+  position: relative;
+
+  width: 100%;
+
+  padding: 42px 48px 28px;
+
+  background-color: #ffffff;
+
+  border-top: 1px solid #eeeeee;
+
+  overflow: hidden;
+}
+
+
+/* ========================================
+   Contenu principal
+======================================== */
+
+.footer__container {
+  position: relative;
+
+  width: 100%;
+  max-width: 1344px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    1.8fr
+    0.8fr
+    1.2fr
+    1.25fr;
+
+  gap: 45px;
+
+  z-index: 2;
+}
+
+
+/* ========================================
+   Présentation STMF
+======================================== */
+
+.footer__brand {
+  padding-right: 40px;
+
+  border-right: 1px solid #eeeeee;
+}
+
+.footer__logo {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: #111111;
+
+  font-size: 40px;
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: 2px;
+}
+
+.footer__description {
+  max-width: 350px;
+
+  margin: 0;
+
+  color: #555555;
+
+  font-size: 13px;
+
+  line-height: 1.65;
+}
+
+
+/* ========================================
+   Colonnes
+======================================== */
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__title {
+  margin: 0 0 16px;
+
+  color: #111111;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+/* ========================================
+   Navigation
+======================================== */
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+
+  gap: 11px;
+}
+
+.footer__links a {
+  width: fit-content;
+
+  color: #4a4a4a;
+
+  font-size: 13px;
+
+  transition: color 0.2s ease;
+}
+
+.footer__links a:hover {
+  color: #f20d18;
+}
+
+
+/* ========================================
+   Services
+======================================== */
+
+.footer__services {
+  display: flex;
+  flex-direction: column;
+
+  gap: 11px;
+}
+
+.footer__services p {
+  margin: 0;
+
+  color: #4a4a4a;
+
+  font-size: 13px;
+
+  line-height: 1.45;
+}
+
+
+/* ========================================
+   Contact
+======================================== */
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+
+  gap: 14px;
+}
+
+.footer__contact-item {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  color: #444444;
+
+  font-size: 13px;
+}
+
+a.footer__contact-item {
+  width: fit-content;
+
+  transition: color 0.2s ease;
+}
+
+a.footer__contact-item:hover {
+  color: #f20d18;
+}
+
+.footer__contact-item svg {
+  flex-shrink: 0;
+}
+
+
+/* ========================================
+   Bas du Footer
+======================================== */
+
+.footer__bottom {
+  position: relative;
+
+  width: 100%;
+  max-width: 1344px;
+
+  margin: 42px auto 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: #666666;
+
+  font-size: 11px;
+
+  z-index: 2;
+}
+
+.footer__bottom p {
+  margin: 0;
+}
+
+.footer__legal {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+}
+
+
+/* ========================================
+   Forme rouge décorative
+======================================== */
+
+.footer__red-shape {
+  position: absolute;
+
+  right: -130px;
+  bottom: -70px;
+
+  width: 760px;
+  height: 105px;
+
+  background-color: #f20d18;
+
+  transform: rotate(-5deg);
+
+  transform-origin: center;
+
+  z-index: 1;
+
+  pointer-events: none;
+}

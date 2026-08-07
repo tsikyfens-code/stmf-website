@@ -5,6 +5,7 @@ import {
 } from "react-router";
 
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -12,39 +13,43 @@ function App() {
 
       <Header />
 
-      <Routes>
+      <main>
+        <Routes>
 
-        {/* Accueil */}
-        <Route
-          path="/"
-          element={<h1>Accueil</h1>}
-        />
+          {/* Accueil */}
+          <Route
+            path="/"
+            element={<h1>Accueil</h1>}
+          />
 
-        {/* En savoir plus */}
-        <Route
-          path="/en-savoir-plus"
-          element={<h1>En savoir plus</h1>}
-        />
+          {/* En savoir plus */}
+          <Route
+            path="/en-savoir-plus"
+            element={<h1>En savoir plus</h1>}
+          />
 
-        {/* À propos */}
-        <Route
-          path="/a-propos"
-          element={<h1>À propos</h1>}
-        />
+          {/* À propos */}
+          <Route
+            path="/a-propos"
+            element={<h1>À propos</h1>}
+          />
 
-        {/* Recrutement */}
-        <Route
-          path="/recrutement"
-          element={<h1>Recrutement</h1>}
-        />
+          {/* Recrutement */}
+          <Route
+            path="/recrutement"
+            element={<h1>Recrutement</h1>}
+          />
 
-        {/* Contact */}
-        <Route
-          path="/contact"
-          element={<h1>Contact</h1>}
-        />
+          {/* Contact */}
+          <Route
+            path="/contact"
+            element={<h1>Contact</h1>}
+          />
 
-      </Routes>
+        </Routes>
+      </main>
+
+      <Footer />
 
     </BrowserRouter>
   );
