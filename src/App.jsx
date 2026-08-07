@@ -9,6 +9,7 @@ import Footer from "./components/Footer/Footer";
 
 import Accueil from "./pages/Accueil/Accueil";
 import EnSavoirPlus from "./pages/EnSavoirPlus/EnSavoirPlus";
+import APropos from "./pages/APropos/APropos";
 
 
 function App() {
@@ -38,7 +39,7 @@ function App() {
           {/* À propos */}
           <Route
             path="/a-propos"
-            element={<h1>À propos</h1>}
+            element={<APropos />}
           />
 
 
