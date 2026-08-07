@@ -8,6 +8,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
 import Accueil from "./pages/Accueil/Accueil";
+import EnSavoirPlus from "./pages/EnSavoirPlus/EnSavoirPlus";
 
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
           {/* En savoir plus */}
           <Route
             path="/en-savoir-plus"
-            element={<h1>En savoir plus</h1>}
+            element={<EnSavoirPlus />}
           />
 
 
