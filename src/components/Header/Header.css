@@ -1,0 +1,122 @@
+/* ========================================
+   STMF - Header
+======================================== */
+
+.header {
+  width: 100%;
+  height: 82px;
+
+  background-color: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+
+  position: relative;
+
+  z-index: 1000;
+}
+
+
+/* Conteneur principal */
+
+.header__container {
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+
+  margin: 0 auto;
+  padding: 0 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* ========================================
+   STMF
+======================================== */
+
+.header__brand {
+  display: inline-flex;
+  align-items: center;
+
+  color: #111111;
+
+  font-size: 42px;
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: 2px;
+
+  text-decoration: none;
+}
+
+
+/* ========================================
+   Navigation
+======================================== */
+
+.header__nav {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 48px;
+}
+
+
+/* Liens */
+
+.header__link {
+  position: relative;
+
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  color: #111111;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+
+/* Survol */
+
+.header__link:hover {
+  color: #f20d18;
+}
+
+
+/* Page active */
+
+.header__link--active {
+  color: #f20d18;
+
+  font-weight: 600;
+}
+
+
+/* Trait rouge sous la page active */
+
+.header__link--active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: 7px;
+
+  width: 42px;
+  height: 3px;
+
+  background-color: #f20d18;
+
+  transform: translateX(-50%);
+}

@@ -4,42 +4,48 @@ import {
   Route,
 } from "react-router";
 
+import Header from "./components/Header/Header";
+
 function App() {
   return (
     <BrowserRouter>
+
+      <Header />
+
       <Routes>
 
-        {/* Page Accueil */}
+        {/* Accueil */}
         <Route
           path="/"
           element={<h1>Accueil</h1>}
         />
 
-        {/* Page En savoir plus */}
+        {/* En savoir plus */}
         <Route
           path="/en-savoir-plus"
           element={<h1>En savoir plus</h1>}
         />
 
-        {/* Page À propos */}
+        {/* À propos */}
         <Route
           path="/a-propos"
           element={<h1>À propos</h1>}
         />
 
-        {/* Page Recrutement */}
+        {/* Recrutement */}
         <Route
           path="/recrutement"
           element={<h1>Recrutement</h1>}
         />
 
-        {/* Page Contact */}
+        {/* Contact */}
         <Route
           path="/contact"
           element={<h1>Contact</h1>}
         />
 
       </Routes>
+
     </BrowserRouter>
   );
 }
