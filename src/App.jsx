@@ -7,6 +7,9 @@ import {
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
+import Accueil from "./pages/Accueil/Accueil";
+
+
 function App() {
   return (
     <BrowserRouter>
@@ -14,13 +17,15 @@ function App() {
       <Header />
 
       <main>
+
         <Routes>
 
           {/* Accueil */}
           <Route
             path="/"
-            element={<h1>Accueil</h1>}
+            element={<Accueil />}
           />
+
 
           {/* En savoir plus */}
           <Route
@@ -28,17 +33,20 @@ function App() {
             element={<h1>En savoir plus</h1>}
           />
 
+
           {/* À propos */}
           <Route
             path="/a-propos"
             element={<h1>À propos</h1>}
           />
 
+
           {/* Recrutement */}
           <Route
             path="/recrutement"
             element={<h1>Recrutement</h1>}
           />
+
 
           {/* Contact */}
           <Route
@@ -47,6 +55,7 @@ function App() {
           />
 
         </Routes>
+
       </main>
 
       <Footer />
@@ -54,5 +63,6 @@ function App() {
     </BrowserRouter>
   );
 }
+
 
 export default App;

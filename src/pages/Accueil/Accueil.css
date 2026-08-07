@@ -1,0 +1,473 @@
+/* ========================================
+   STMF - Page Accueil
+======================================== */
+
+.accueil {
+  width: 100%;
+
+  background-color: #ffffff;
+
+  overflow: hidden;
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.accueil-hero {
+  width: 100%;
+
+  background-color: #ffffff;
+}
+
+
+.accueil-hero__content {
+  width: 100%;
+
+  min-height: 720px;
+
+  display: grid;
+
+  grid-template-columns: 48% 52%;
+}
+
+
+/* ========================================
+   HERO - Partie texte
+======================================== */
+
+.accueil-hero__text {
+  position: relative;
+
+  padding:
+    76px
+    40px
+    35px
+    max(48px, calc((100vw - 1440px) / 2 + 48px));
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  background-color: #ffffff;
+
+  z-index: 4;
+}
+
+
+/* Badge */
+
+.accueil-hero__badge {
+  min-height: 36px;
+
+  padding: 7px 17px;
+
+  margin-bottom: 38px;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 11px;
+
+  color: #f20d18;
+
+  border: 1.5px solid #f20d18;
+  border-radius: 999px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  line-height: 1;
+}
+
+
+.accueil-hero__badge-dot {
+  width: 11px;
+  height: 11px;
+
+  flex-shrink: 0;
+
+  background-color: #f20d18;
+
+  border-radius: 50%;
+}
+
+
+/* Grand titre */
+
+.accueil-hero__title {
+  width: 100%;
+  max-width: 625px;
+
+  margin: 0;
+
+  color: #0d0d0d;
+
+  font-size: clamp(46px, 4.1vw, 64px);
+  font-weight: 800;
+
+  line-height: 1.16;
+
+  letter-spacing: -2px;
+}
+
+
+/* Description */
+
+.accueil-hero__description {
+  max-width: 530px;
+
+  margin: 32px 0 0;
+
+  color: #333333;
+
+  font-size: 19px;
+  font-weight: 400;
+
+  line-height: 1.65;
+}
+
+
+/* ========================================
+   Boutons
+======================================== */
+
+.accueil-hero__actions {
+  margin-top: 38px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 27px;
+}
+
+
+.accueil-button {
+  min-width: 194px;
+  height: 58px;
+
+  padding: 0 22px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+
+  border-radius: 12px;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  line-height: 1;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+
+.accueil-button:hover {
+  transform: translateY(-2px);
+}
+
+
+.accueil-button--primary {
+  color: #ffffff;
+
+  background-color: #f20d18;
+
+  border: 1.5px solid #f20d18;
+}
+
+
+.accueil-button--primary:hover {
+  background-color: #d90b15;
+}
+
+
+.accueil-button--secondary {
+  color: #f20d18;
+
+  background-color: #ffffff;
+
+  border: 1.5px solid #f20d18;
+}
+
+
+.accueil-button--secondary:hover {
+  background-color: #fff4f5;
+}
+
+
+/* ========================================
+   Points décoratifs
+======================================== */
+
+.accueil-hero__dots {
+  width: 165px;
+  height: 70px;
+
+  margin-top: 45px;
+
+  background-image:
+    radial-gradient(
+      circle,
+      #f20d18 1.35px,
+      transparent 1.6px
+    );
+
+  background-size: 17px 17px;
+}
+
+
+/* ========================================
+   HERO - Image
+======================================== */
+
+.accueil-hero__visual {
+  position: relative;
+
+  min-height: 720px;
+
+  overflow: hidden;
+
+  background-color: #f5f5f5;
+}
+
+
+.accueil-hero__image {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  z-index: 1;
+}
+
+
+/* Grande courbe blanche */
+
+.accueil-hero__white-curve {
+  position: absolute;
+
+  top: -80px;
+  left: -155px;
+
+  width: 280px;
+  height: 880px;
+
+  background-color: #ffffff;
+
+  border-radius: 0 52% 52% 0;
+
+  z-index: 2;
+
+  pointer-events: none;
+}
+
+
+/* Forme rouge dans le coin inférieur droit */
+
+.accueil-hero__red-curve {
+  position: absolute;
+
+  right: -260px;
+  bottom: -245px;
+
+  width: 870px;
+  height: 390px;
+
+  background-color: #f20d18;
+
+  border-radius: 50% 0 0 0;
+
+  transform: rotate(-7deg);
+
+  z-index: 3;
+
+  pointer-events: none;
+}
+
+
+/* ========================================
+   QUI SOMMES-NOUS ?
+======================================== */
+
+.accueil-about {
+  width: 100%;
+
+  padding: 40px 48px 78px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #fafafa 100%
+    );
+}
+
+
+.accueil-about__container {
+  width: 100%;
+  max-width: 1160px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+/* Petit trait rouge */
+
+.accueil-about__line {
+  width: 52px;
+  height: 3px;
+
+  margin: 0 auto 15px;
+
+  background-color: #f20d18;
+}
+
+
+/* Qui sommes-nous ? */
+
+.accueil-about__label {
+  margin: 0 0 14px;
+
+  color: #f20d18;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+/* Titre */
+
+.accueil-about__title {
+  margin: 0;
+
+  color: #101010;
+
+  font-size: 35px;
+  font-weight: 800;
+
+  line-height: 1.2;
+
+  letter-spacing: -1px;
+}
+
+
+/* Description */
+
+.accueil-about__description {
+  max-width: 790px;
+
+  margin: 24px auto 42px;
+
+  color: #555555;
+
+  font-size: 16px;
+
+  line-height: 1.65;
+}
+
+
+/* ========================================
+   Cartes
+======================================== */
+
+.accueil-features {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 45px;
+}
+
+
+.accueil-feature {
+  min-height: 305px;
+
+  padding: 28px 28px 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #ffffff;
+
+  border: 1px solid #eeeeee;
+  border-radius: 15px;
+
+  box-shadow:
+    0 8px 28px rgba(0, 0, 0, 0.045);
+}
+
+
+/* Cercle icône */
+
+.accueil-feature__icon {
+  width: 88px;
+  height: 88px;
+
+  margin-bottom: 17px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #f20d18;
+
+  background-color: #fff0f1;
+
+  border-radius: 50%;
+}
+
+
+/* Titre carte */
+
+.accueil-feature__title {
+  margin: 0 0 13px;
+
+  color: #111111;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+/* Description carte */
+
+.accueil-feature__description {
+  max-width: 270px;
+
+  margin: 0;
+
+  color: #555555;
+
+  font-size: 15px;
+
+  line-height: 1.55;
+}
+
+
+/* Trait inférieur */
+
+.accueil-feature__line {
+  width: 62px;
+  height: 3px;
+
+  margin-top: auto;
+
+  background-color: #f20d18;
+}
