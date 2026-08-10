@@ -11,6 +11,7 @@ import Accueil from "./pages/Accueil/Accueil";
 import EnSavoirPlus from "./pages/EnSavoirPlus/EnSavoirPlus";
 import APropos from "./pages/APropos/APropos";
 import Recrutement from "./pages/Recrutement/Recrutement";
+import Contact from "./pages/Contact/Contact";
 
 
 function App() {
@@ -45,7 +46,7 @@ function App() {
 
           <Route
             path="/contact"
-            element={<h1>Contact</h1>}
+            element={<Contact />}
           />
 
         </Routes>
