@@ -1,0 +1,549 @@
+/* ========================================
+   STMF - Page Recrutement
+======================================== */
+
+.recrutement {
+  width: 100%;
+
+  background-color: #ffffff;
+
+  overflow: hidden;
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.recrutement-hero {
+  width: 100%;
+
+  background-color: #ffffff;
+}
+
+
+.recrutement-hero__content {
+  width: 100%;
+
+  min-height: 530px;
+
+  display: grid;
+
+  grid-template-columns: 50% 50%;
+}
+
+
+/* Texte */
+
+.recrutement-hero__text {
+  position: relative;
+
+  padding:
+    52px
+    45px
+    25px
+    max(48px, calc((100vw - 1440px) / 2 + 48px));
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  z-index: 4;
+}
+
+
+/* Badge */
+
+.recrutement-hero__badge {
+  min-height: 34px;
+
+  margin-bottom: 28px;
+
+  padding: 7px 17px;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 11px;
+
+  color: #f20d18;
+
+  border: 1.5px solid #f20d18;
+  border-radius: 999px;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+.recrutement-hero__badge-dot {
+  width: 10px;
+  height: 10px;
+
+  background-color: #f20d18;
+
+  border-radius: 50%;
+}
+
+
+/* Titre */
+
+.recrutement-hero__title {
+  margin: 0;
+
+  color: #0d0d0d;
+
+  font-size: clamp(50px, 4.8vw, 68px);
+  font-weight: 800;
+
+  line-height: 1.05;
+
+  letter-spacing: -2px;
+}
+
+
+.recrutement-hero__line {
+  width: 63px;
+  height: 4px;
+
+  margin-top: 31px;
+
+  background-color: #f20d18;
+}
+
+
+/* Description */
+
+.recrutement-hero__description {
+  width: 100%;
+  max-width: 565px;
+
+  margin: 31px 0 0;
+
+  color: #3f3f3f;
+
+  font-size: 17px;
+
+  line-height: 1.62;
+}
+
+
+/* Points */
+
+.recrutement-hero__dots {
+  width: 155px;
+  height: 60px;
+
+  margin-top: 29px;
+
+  background-image:
+    radial-gradient(
+      circle,
+      #f20d18 1.35px,
+      transparent 1.6px
+    );
+
+  background-size: 17px 17px;
+}
+
+
+/* ========================================
+   HERO - Image
+======================================== */
+
+.recrutement-hero__visual {
+  position: relative;
+
+  min-height: 530px;
+
+  overflow: hidden;
+
+  background-color: #f5f5f5;
+}
+
+
+.recrutement-hero__image {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  z-index: 1;
+}
+
+
+.recrutement-hero__white-curve {
+  position: absolute;
+
+  top: -70px;
+  left: -145px;
+
+  width: 260px;
+  height: 670px;
+
+  background-color: #ffffff;
+
+  border-radius: 0 52% 52% 0;
+
+  z-index: 2;
+}
+
+
+.recrutement-hero__red-curve {
+  position: absolute;
+
+  right: -250px;
+  bottom: -225px;
+
+  width: 810px;
+  height: 350px;
+
+  background-color: #f20d18;
+
+  border-radius: 50% 0 0 0;
+
+  transform: rotate(-7deg);
+
+  z-index: 3;
+}
+
+
+/* ========================================
+   OFFRES
+======================================== */
+
+.recrutement-jobs {
+  width: 100%;
+
+  padding: 0 48px 16px;
+
+  margin-top: -1px;
+
+  position: relative;
+
+  z-index: 5;
+}
+
+
+.recrutement-jobs__container {
+  width: 100%;
+  max-width: 1320px;
+
+  margin: 0 auto;
+}
+
+
+/* ========================================
+   Carte offre
+======================================== */
+
+.recrutement-job {
+  width: 100%;
+
+  min-height: 265px;
+
+  margin-bottom: 14px;
+  padding: 18px;
+
+  display: grid;
+
+  grid-template-columns: 43% 57%;
+
+  gap: 36px;
+
+  background-color: #ffffff;
+
+  border: 1px solid #ededed;
+  border-radius: 15px;
+
+  box-shadow:
+    0 7px 25px rgba(0, 0, 0, 0.055);
+}
+
+
+/* Image */
+
+.recrutement-job__image-wrapper {
+  width: 100%;
+  min-height: 225px;
+
+  overflow: hidden;
+
+  border-radius: 7px;
+}
+
+
+.recrutement-job__image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+/* Texte */
+
+.recrutement-job__information {
+  padding: 16px 28px 12px 0;
+
+  display: flex;
+  align-items: flex-start;
+}
+
+
+/* Contenu Accordion */
+
+.recrutement-job__details {
+  padding:
+    13px
+    0
+    0
+    82px;
+}
+
+
+/* Description */
+
+.recrutement-job__description {
+  max-width: 620px;
+
+  margin: 0;
+
+  color: #444444;
+
+  font-size: 16px;
+
+  line-height: 1.55;
+}
+
+
+/* ========================================
+   État disponibilité
+======================================== */
+
+.recrutement-job__status {
+  width: fit-content;
+
+  min-height: 34px;
+
+  margin-top: 21px;
+
+  padding: 8px 16px;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 10px;
+
+  border-radius: 999px;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+/* Offre indisponible */
+
+.recrutement-job__status--unavailable {
+  color: #e40c17;
+
+  background-color: #fff0f1;
+}
+
+
+/* Offre disponible */
+
+.recrutement-job__status--available {
+  color: #187a3c;
+
+  background-color: #edf9f1;
+}
+
+
+/* Point */
+
+.recrutement-job__status-dot {
+  width: 9px;
+  height: 9px;
+
+  flex-shrink: 0;
+
+  background-color: currentColor;
+
+  border-radius: 50%;
+}
+
+
+/* ========================================
+   CANDIDATURE SPONTANÉE
+======================================== */
+
+.recrutement-spontaneous {
+  width: 100%;
+
+  padding: 0 48px 25px;
+}
+
+
+.recrutement-spontaneous__container {
+  width: 100%;
+  max-width: 1320px;
+
+  min-height: 130px;
+
+  margin: 0 auto;
+  padding: 18px 35px;
+
+  display: grid;
+
+  grid-template-columns: 230px 1fr;
+
+  align-items: center;
+
+  background-color: #fffafa;
+
+  border: 1px solid #ffd1d4;
+  border-radius: 14px;
+}
+
+
+/* Décoration */
+
+.recrutement-spontaneous__decoration {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+}
+
+
+.recrutement-spontaneous__icon {
+  position: relative;
+
+  width: 83px;
+  height: 83px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #f20d18;
+
+  background-color: #ffe7e9;
+
+  border-radius: 50%;
+
+  z-index: 2;
+}
+
+
+.recrutement-spontaneous__dots {
+  position: absolute;
+
+  left: 45px;
+  bottom: -18px;
+
+  width: 75px;
+  height: 45px;
+
+  background-image:
+    radial-gradient(
+      circle,
+      #f20d18 1.25px,
+      transparent 1.5px
+    );
+
+  background-size: 14px 14px;
+}
+
+
+/* Texte */
+
+.recrutement-spontaneous__content h2 {
+  margin: 0;
+
+  color: #111111;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  line-height: 1.35;
+}
+
+
+/* Ligne contact */
+
+.recrutement-spontaneous__contact {
+  margin-top: 13px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 26px;
+}
+
+
+.recrutement-spontaneous__email {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 12px;
+
+  color: #333333;
+
+  font-size: 15px;
+}
+
+
+.recrutement-spontaneous__email:hover {
+  color: #f20d18;
+}
+
+
+.recrutement-spontaneous__separator {
+  width: 1px;
+  height: 29px;
+
+  background-color: #777777;
+}
+
+
+/* Bouton */
+
+.recrutement-spontaneous__button {
+  min-width: 220px;
+  height: 43px;
+
+  padding: 0 17px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 18px;
+
+  color: #ffffff;
+
+  background-color: #f20d18;
+
+  border-radius: 7px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.recrutement-spontaneous__button:hover {
+  background-color: #d90b15;
+
+  transform: translateY(-1px);
+}

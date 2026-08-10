@@ -1,0 +1,120 @@
+/* ========================================
+   STMF - Accordion
+======================================== */
+
+.accordion {
+  width: 100%;
+}
+
+
+/* ========================================
+   Bouton / En-tête
+======================================== */
+
+.accordion__trigger {
+  width: 100%;
+
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  color: #111111;
+  background: transparent;
+
+  border: 0;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+
+.accordion__trigger-left {
+  display: flex;
+  align-items: center;
+
+  gap: 24px;
+}
+
+
+/* Icône */
+
+.accordion__icon {
+  width: 58px;
+  height: 58px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+
+  background-color: #f20d18;
+
+  border-radius: 50%;
+}
+
+
+.accordion__icon svg {
+  width: 29px;
+  height: 29px;
+}
+
+
+/* Titre */
+
+.accordion__title {
+  color: #111111;
+
+  font-size: 28px;
+  font-weight: 800;
+
+  line-height: 1.2;
+}
+
+
+/* Flèche */
+
+.accordion__chevron {
+  flex-shrink: 0;
+
+  color: #f20d18;
+
+  transition: transform 0.25s ease;
+}
+
+
+.accordion--open
+.accordion__chevron {
+  transform: rotate(180deg);
+}
+
+
+/* ========================================
+   Contenu
+======================================== */
+
+.accordion__content {
+  display: grid;
+
+  grid-template-rows: 0fr;
+
+  transition: grid-template-rows 0.3s ease;
+}
+
+
+.accordion--open
+.accordion__content {
+  grid-template-rows: 1fr;
+}
+
+
+.accordion__content-inner {
+  overflow: hidden;
+}
