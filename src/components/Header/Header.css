@@ -3,21 +3,26 @@
 ======================================== */
 
 .header {
+  position: relative;
+
   width: 100%;
   height: 82px;
 
   background-color: #ffffff;
-  border-bottom: 1px solid #eeeeee;
 
-  position: relative;
+  border-bottom: 1px solid #eeeeee;
 
   z-index: 1000;
 }
 
 
-/* Conteneur principal */
+/* ========================================
+   Conteneur
+======================================== */
 
 .header__container {
+  position: relative;
+
   width: 100%;
   max-width: 1440px;
   height: 100%;
@@ -49,11 +54,13 @@
   letter-spacing: 2px;
 
   text-decoration: none;
+
+  flex-shrink: 0;
 }
 
 
 /* ========================================
-   Navigation
+   Navigation desktop
 ======================================== */
 
 .header__nav {
@@ -65,8 +72,6 @@
   gap: 48px;
 }
 
-
-/* Liens */
 
 .header__link {
   position: relative;
@@ -87,14 +92,10 @@
 }
 
 
-/* Survol */
-
 .header__link:hover {
   color: #f20d18;
 }
 
-
-/* Page active */
 
 .header__link--active {
   color: #f20d18;
@@ -102,8 +103,6 @@
   font-weight: 600;
 }
 
-
-/* Trait rouge sous la page active */
 
 .header__link--active::after {
   content: "";
@@ -119,4 +118,39 @@
   background-color: #f20d18;
 
   transform: translateX(-50%);
+}
+
+
+/* ========================================
+   Bouton hamburger
+======================================== */
+
+.header__menu-button {
+  width: 44px;
+  height: 44px;
+
+  padding: 0;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  color: #111111;
+  background: transparent;
+
+  border: 0;
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+
+.header__menu-button:hover {
+  color: #f20d18;
+
+  background-color: #fff3f4;
 }

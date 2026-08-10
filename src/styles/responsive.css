@@ -1,0 +1,1118 @@
+/* ========================================
+   STMF - Responsive global
+======================================== */
+
+body {
+  overflow-x: hidden;
+}
+
+
+/* ==========================================================
+   LAPTOP
+   961px à 1200px environ
+========================================================== */
+
+@media (max-width: 1200px) {
+
+  /* HEADER */
+
+  .header__container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .header__brand {
+    font-size: 38px;
+  }
+
+  .header__nav {
+    gap: 28px;
+  }
+
+  .header__link {
+    font-size: 14px;
+  }
+
+
+  /* FOOTER */
+
+  .footer {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .footer__container {
+    gap: 28px;
+  }
+
+
+  /* ACCUEIL */
+
+  .accueil-hero__text {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .accueil-about {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .accueil-features {
+    gap: 28px;
+  }
+
+
+  /* EN SAVOIR PLUS */
+
+  .esp-hero__text {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .esp-services {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .esp-service-card__information {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .esp-organisation {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+
+  /* À PROPOS */
+
+  .apropos-hero__text {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .apropos-team,
+  .apropos-history {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+
+  /* RECRUTEMENT */
+
+  .recrutement-hero__text {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .recrutement-jobs,
+  .recrutement-spontaneous {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .recrutement-job {
+    gap: 26px;
+  }
+
+  .accordion__title {
+    font-size: 24px;
+  }
+
+
+  /* CONTACT */
+
+  .contact-hero__text {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .contact-info,
+  .contact-social,
+  .contact-main {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+}
+
+
+/* ==========================================================
+   TABLETTE
+   <= 960px
+========================================================== */
+
+@media (max-width: 960px) {
+
+  /* ========================================
+     HEADER / MENU HAMBURGER
+  ======================================== */
+
+  .header__container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .header__menu-button {
+    display: flex;
+  }
+
+  .header__nav {
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    height: auto;
+
+    padding: 0 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 0;
+
+    background-color: #ffffff;
+
+    border-bottom: 1px solid #eeeeee;
+
+    box-shadow:
+      0 12px 25px rgba(0, 0, 0, 0.08);
+
+    max-height: 0;
+
+    opacity: 0;
+    visibility: hidden;
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+    transition:
+      max-height 0.3s ease,
+      opacity 0.2s ease,
+      padding 0.3s ease;
+  }
+
+  .header__nav--open {
+    max-height: 400px;
+
+    padding-top: 8px;
+    padding-bottom: 18px;
+
+    opacity: 1;
+    visibility: visible;
+
+    pointer-events: auto;
+  }
+
+  .header__link {
+    width: 100%;
+    height: auto;
+
+    padding: 15px 0;
+
+    font-size: 15px;
+  }
+
+  .header__link--active::after {
+    left: 0;
+    bottom: 8px;
+
+    width: 32px;
+
+    transform: none;
+  }
+
+
+  /* ========================================
+     HERO : toutes les pages
+  ======================================== */
+
+  .accueil-hero__content,
+  .esp-hero__content,
+  .apropos-hero__content,
+  .recrutement-hero__content,
+  .contact-hero__content {
+    grid-template-columns: 1fr;
+  }
+
+
+  .accueil-hero__text,
+  .esp-hero__text,
+  .apropos-hero__text,
+  .recrutement-hero__text,
+  .contact-hero__text {
+    padding:
+      52px
+      32px
+      42px;
+  }
+
+
+  .accueil-hero__visual,
+  .esp-hero__visual,
+  .apropos-hero__visual,
+  .recrutement-hero__visual,
+  .contact-hero__visual {
+    min-height: 430px;
+  }
+
+
+  .accueil-hero__white-curve,
+  .esp-hero__white-curve,
+  .apropos-hero__white-curve,
+  .recrutement-hero__white-curve,
+  .contact-hero__white-curve {
+    display: none;
+  }
+
+
+  .accueil-hero__red-curve,
+  .esp-hero__red-curve,
+  .apropos-hero__red-curve,
+  .recrutement-hero__red-curve,
+  .contact-hero__red-curve {
+    right: -300px;
+    bottom: -245px;
+
+    width: 850px;
+    height: 370px;
+  }
+
+
+  /* ========================================
+     ACCUEIL
+  ======================================== */
+
+  .accueil-hero__title {
+    max-width: 720px;
+
+    font-size: 52px;
+  }
+
+  .accueil-hero__description {
+    max-width: 650px;
+  }
+
+  .accueil-about {
+    padding:
+      45px
+      32px
+      65px;
+  }
+
+  .accueil-features {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 25px;
+  }
+
+  .accueil-feature:last-child {
+    width: 100%;
+    max-width: 440px;
+
+    grid-column: 1 / -1;
+
+    justify-self: center;
+  }
+
+
+  /* ========================================
+     EN SAVOIR PLUS
+  ======================================== */
+
+  .esp-hero__title {
+    max-width: 700px;
+
+    font-size: 47px;
+  }
+
+  .esp-hero__description {
+    max-width: 650px;
+  }
+
+  .esp-services {
+    padding:
+      22px
+      32px
+      0;
+  }
+
+  .esp-service-card,
+  .esp-service-card--reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .esp-service-card__image-wrapper,
+  .esp-service-card--reverse
+  .esp-service-card__image-wrapper {
+    order: 1;
+  }
+
+  .esp-service-card__information,
+  .esp-service-card--reverse
+  .esp-service-card__information {
+    order: 2;
+
+    padding:
+      25px
+      20px;
+  }
+
+  .esp-service-card__image {
+    min-height: 280px;
+  }
+
+  .esp-organisation {
+    margin-top: 32px;
+  }
+
+  .esp-organisation__items {
+    grid-template-columns: 1fr;
+
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    gap: 25px;
+  }
+
+
+  /* ========================================
+     À PROPOS
+  ======================================== */
+
+  .apropos-hero__title {
+    max-width: 730px;
+
+    font-size: 48px;
+  }
+
+  .apropos-hero__description {
+    max-width: 680px;
+  }
+
+  .apropos-team {
+    padding:
+      35px
+      32px
+      30px;
+  }
+
+  .apropos-team__image-wrapper {
+    height: 245px;
+  }
+
+  .apropos-history {
+    padding:
+      25px
+      32px
+      50px;
+  }
+
+  .apropos-timeline {
+    grid-template-columns:
+      1fr
+      55px
+      1fr
+      55px
+      1fr;
+  }
+
+
+  /* ========================================
+     RECRUTEMENT
+  ======================================== */
+
+  .recrutement-hero__title {
+    font-size: 56px;
+  }
+
+  .recrutement-jobs {
+    padding:
+      22px
+      32px
+      18px;
+  }
+
+  .recrutement-job {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+  .recrutement-job__image-wrapper {
+    min-height: 280px;
+  }
+
+  .recrutement-job__information {
+    padding:
+      18px
+      15px
+      20px;
+  }
+
+  .recrutement-job__details {
+    padding:
+      15px
+      0
+      0;
+  }
+
+  .recrutement-spontaneous__container {
+    grid-template-columns: 170px 1fr;
+  }
+
+
+  /* ========================================
+     CONTACT
+  ======================================== */
+
+  .contact-hero__title {
+    font-size: 55px;
+  }
+
+  .contact-info__container {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+
+    gap: 16px;
+  }
+
+  .contact-info-card {
+    padding:
+      24px
+      18px;
+  }
+
+  .contact-social__container {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    gap: 25px;
+  }
+
+  .contact-main__container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-reasons {
+    min-height: auto;
+  }
+
+
+  /* ========================================
+     FOOTER
+  ======================================== */
+
+  .footer {
+    padding:
+      38px
+      32px
+      25px;
+  }
+
+  .footer__container {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap:
+      35px
+      45px;
+  }
+
+  .footer__brand {
+    border-right: 0;
+
+    padding-right: 0;
+  }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+   <= 640px
+========================================================== */
+
+@media (max-width: 640px) {
+
+  /* ========================================
+     HEADER
+  ======================================== */
+
+  .header {
+    height: 72px;
+  }
+
+  .header__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .header__brand {
+    font-size: 32px;
+
+    letter-spacing: 1.5px;
+  }
+
+  .header__menu-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header__nav {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  /* ========================================
+     HERO GLOBAL
+  ======================================== */
+
+  .accueil-hero__text,
+  .esp-hero__text,
+  .apropos-hero__text,
+  .recrutement-hero__text,
+  .contact-hero__text {
+    padding:
+      38px
+      20px
+      35px;
+  }
+
+
+  .accueil-hero__visual,
+  .esp-hero__visual,
+  .apropos-hero__visual,
+  .recrutement-hero__visual,
+  .contact-hero__visual {
+    min-height: 350px;
+  }
+
+
+  .accueil-hero__red-curve,
+  .esp-hero__red-curve,
+  .apropos-hero__red-curve,
+  .recrutement-hero__red-curve,
+  .contact-hero__red-curve {
+    right: -350px;
+    bottom: -260px;
+
+    width: 760px;
+    height: 350px;
+  }
+
+
+  /* ========================================
+     ACCUEIL
+  ======================================== */
+
+  .accueil-hero__badge {
+    margin-bottom: 27px;
+
+    font-size: 13px;
+  }
+
+  .accueil-hero__title {
+    font-size: 38px;
+
+    line-height: 1.12;
+
+    letter-spacing: -1.3px;
+  }
+
+  .accueil-hero__description {
+    margin-top: 25px;
+
+    font-size: 16px;
+
+    line-height: 1.55;
+  }
+
+  .accueil-hero__actions {
+    width: 100%;
+
+    margin-top: 30px;
+
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 13px;
+  }
+
+  .accueil-button {
+    width: 100%;
+  }
+
+  .accueil-hero__dots {
+    margin-top: 30px;
+  }
+
+  .accueil-about {
+    padding:
+      40px
+      20px
+      55px;
+  }
+
+  .accueil-about__title {
+    font-size: 29px;
+  }
+
+  .accueil-about__title br {
+    display: none;
+  }
+
+  .accueil-about__description {
+    font-size: 15px;
+  }
+
+  .accueil-features {
+    grid-template-columns: 1fr;
+  }
+
+  .accueil-feature:last-child {
+    max-width: none;
+
+    grid-column: auto;
+  }
+
+
+  /* ========================================
+     EN SAVOIR PLUS
+  ======================================== */
+
+  .esp-hero__title {
+    font-size: 36px;
+
+    letter-spacing: -1px;
+  }
+
+  .esp-hero__description {
+    font-size: 15px;
+  }
+
+  .esp-hero__actions {
+    width: 100%;
+
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 13px;
+  }
+
+  .esp-button {
+    width: 100%;
+  }
+
+  .esp-services {
+    padding:
+      16px
+      14px
+      0;
+  }
+
+  .esp-service-card {
+    padding: 10px;
+  }
+
+  .esp-service-card__image {
+    min-height: 210px;
+  }
+
+  .esp-service-card__information {
+    flex-direction: column;
+
+    gap: 15px;
+
+    padding:
+      21px
+      12px;
+  }
+
+  .esp-service-card__title {
+    font-size: 20px;
+  }
+
+  .esp-organisation {
+    padding:
+      0
+      20px;
+
+    margin-bottom: 40px;
+  }
+
+  .esp-organisation__title {
+    font-size: 22px;
+  }
+
+  .esp-organisation-item {
+    align-items: flex-start;
+  }
+
+
+  /* ========================================
+     À PROPOS
+  ======================================== */
+
+  .apropos-hero__title {
+    font-size: 36px;
+
+    letter-spacing: -1px;
+  }
+
+  .apropos-hero__title br {
+    display: none;
+  }
+
+  .apropos-hero__description {
+    font-size: 15px;
+  }
+
+  .apropos-hero__actions {
+    width: 100%;
+
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 13px;
+  }
+
+  .apropos-button {
+    width: 100%;
+  }
+
+  .apropos-team {
+    padding:
+      32px
+      20px
+      25px;
+  }
+
+  .apropos-team__title,
+  .apropos-history__title {
+    font-size: 25px;
+  }
+
+  .apropos-team__description br {
+    display: none;
+  }
+
+  .apropos-team__image-wrapper {
+    height: 220px;
+  }
+
+  .apropos-history {
+    padding:
+      25px
+      20px
+      45px;
+  }
+
+  .apropos-timeline {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+
+  .apropos-timeline-card {
+    width: 100%;
+    max-width: 390px;
+
+    margin: 0 auto;
+  }
+
+  .apropos-timeline__connector {
+    width: 2px;
+    height: 42px;
+
+    margin: 0 auto;
+
+    background-color: #f20d18;
+  }
+
+  .apropos-timeline__connector span {
+    width: 12px;
+    height: 12px;
+  }
+
+
+  /* ========================================
+     RECRUTEMENT
+  ======================================== */
+
+  .recrutement-hero__title {
+    font-size: 43px;
+  }
+
+  .recrutement-hero__description {
+    font-size: 15px;
+  }
+
+  .recrutement-jobs {
+    padding:
+      16px
+      14px;
+  }
+
+  .recrutement-job {
+    padding: 11px;
+
+    gap: 12px;
+  }
+
+  .recrutement-job__image-wrapper {
+    min-height: 210px;
+  }
+
+  .recrutement-job__information {
+    padding:
+      15px
+      8px
+      18px;
+  }
+
+  .accordion__trigger-left {
+    gap: 14px;
+  }
+
+  .accordion__icon {
+    width: 49px;
+    height: 49px;
+  }
+
+  .accordion__title {
+    font-size: 20px;
+  }
+
+  .recrutement-job__description {
+    font-size: 15px;
+  }
+
+  .recrutement-job__status {
+    width: 100%;
+
+    font-size: 13px;
+  }
+
+  .recrutement-spontaneous {
+    padding:
+      0
+      14px
+      22px;
+  }
+
+  .recrutement-spontaneous__container {
+    padding:
+      24px
+      20px;
+
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+    text-align: center;
+  }
+
+  .recrutement-spontaneous__content h2 br {
+    display: none;
+  }
+
+  .recrutement-spontaneous__contact {
+    flex-direction: column;
+
+    gap: 14px;
+  }
+
+  .recrutement-spontaneous__separator {
+    display: none;
+  }
+
+  .recrutement-spontaneous__button {
+    width: 100%;
+  }
+
+
+  /* ========================================
+     CONTACT
+  ======================================== */
+
+  .contact-hero__title {
+    font-size: 43px;
+  }
+
+  .contact-hero__description {
+    font-size: 15px;
+  }
+
+  .contact-info {
+    padding:
+      10px
+      14px
+      18px;
+  }
+
+  .contact-info__container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info-card {
+    min-height: auto;
+  }
+
+  .contact-social {
+    padding:
+      0
+      14px
+      18px;
+  }
+
+  .contact-social__container {
+    padding:
+      20px;
+
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .contact-social__separator {
+    width: 100%;
+    height: 1px;
+  }
+
+  .contact-main {
+    padding:
+      0
+      14px
+      24px;
+  }
+
+  .contact-main__container {
+    gap: 15px;
+  }
+
+  .contact-reasons,
+  .contact-form-wrapper {
+    padding:
+      22px
+      18px;
+  }
+
+  .contact-form__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-reasons__icons {
+    gap: 18px;
+  }
+
+
+  /* ========================================
+     FOOTER
+  ======================================== */
+
+  .footer {
+    padding:
+      35px
+      20px
+      25px;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+  .footer__brand {
+    padding: 0;
+  }
+
+  .footer__logo {
+    font-size: 34px;
+  }
+
+  .footer__bottom {
+    margin-top: 32px;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 12px;
+  }
+
+  .footer__legal {
+    flex-wrap: wrap;
+  }
+
+  .footer__red-shape {
+    right: -330px;
+
+    width: 700px;
+  }
+
+}
+
+
+/* ==========================================================
+   PETITS MOBILES
+   <= 420px
+========================================================== */
+
+@media (max-width: 420px) {
+
+  .accueil-hero__title,
+  .recrutement-hero__title,
+  .contact-hero__title {
+    font-size: 36px;
+  }
+
+
+  .esp-hero__title,
+  .apropos-hero__title {
+    font-size: 33px;
+  }
+
+
+  .accueil-hero__visual,
+  .esp-hero__visual,
+  .apropos-hero__visual,
+  .recrutement-hero__visual,
+  .contact-hero__visual {
+    min-height: 310px;
+  }
+
+
+  .accueil-feature {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  .apropos-timeline-card__description br {
+    display: none;
+  }
+
+
+  .accordion__title {
+    font-size: 18px;
+  }
+
+
+  .contact-reasons__icons {
+    justify-content: space-between;
+
+    gap: 8px;
+  }
+
+}
