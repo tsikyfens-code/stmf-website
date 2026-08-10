@@ -7,6 +7,15 @@
 }
 
 
+/* Heading */
+
+.accordion__heading {
+  margin: 0;
+
+  font: inherit;
+}
+
+
 /* ========================================
    Bouton / En-tête
 ======================================== */
@@ -86,7 +95,8 @@
 
   color: #f20d18;
 
-  transition: transform 0.25s ease;
+  transition:
+    transform 0.25s ease;
 }
 
 
@@ -105,7 +115,8 @@
 
   grid-template-rows: 0fr;
 
-  transition: grid-template-rows 0.3s ease;
+  transition:
+    grid-template-rows 0.3s ease;
 }
 
 

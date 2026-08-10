@@ -13,54 +13,65 @@ function Accordion({
   icon,
   defaultOpen = false,
 }) {
-  const [isOpen, setIsOpen] = useState(defaultOpen);
+  const [isOpen, setIsOpen] =
+    useState(defaultOpen);
 
 
   function toggleAccordion() {
-    setIsOpen((currentValue) => !currentValue);
+    setIsOpen(
+      (currentValue) =>
+        !currentValue
+    );
   }
 
 
   return (
     <div
       className={`accordion ${
-        isOpen ? "accordion--open" : ""
+        isOpen
+          ? "accordion--open"
+          : ""
       }`}
     >
 
-      <button
-        type="button"
-        className="accordion__trigger"
-        onClick={toggleAccordion}
-        aria-expanded={isOpen}
-      >
+      <h2 className="accordion__heading">
 
-        <span className="accordion__trigger-left">
+        <button
+          type="button"
+          className="accordion__trigger"
+          onClick={toggleAccordion}
+          aria-expanded={isOpen}
+        >
 
-          {icon && (
-            <span
-              className="accordion__icon"
-              aria-hidden="true"
-            >
-              {icon}
+          <span className="accordion__trigger-left">
+
+            {icon && (
+              <span
+                className="accordion__icon"
+                aria-hidden="true"
+              >
+                {icon}
+              </span>
+            )}
+
+
+            <span className="accordion__title">
+              {title}
             </span>
-          )}
 
-          <span className="accordion__title">
-            {title}
           </span>
 
-        </span>
 
+          <ChevronDown
+            className="accordion__chevron"
+            size={25}
+            strokeWidth={1.8}
+            aria-hidden="true"
+          />
 
-        <ChevronDown
-          className="accordion__chevron"
-          size={25}
-          strokeWidth={1.8}
-          aria-hidden="true"
-        />
+        </button>
 
-      </button>
+      </h2>
 
 
       <div className="accordion__content">

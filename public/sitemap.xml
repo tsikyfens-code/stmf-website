@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+>
+
+  <url>
+    <loc>
+      https://stmf-gestion-locative.com/
+    </loc>
+  </url>
+
+
+  <url>
+    <loc>
+      https://stmf-gestion-locative.com/en-savoir-plus
+    </loc>
+  </url>
+
+
+  <url>
+    <loc>
+      https://stmf-gestion-locative.com/a-propos
+    </loc>
+  </url>
+
+
+  <url>
+    <loc>
+      https://stmf-gestion-locative.com/recrutement
+    </loc>
+  </url>
+
+
+  <url>
+    <loc>
+      https://stmf-gestion-locative.com/contact
+    </loc>
+  </url>
+
+</urlset>

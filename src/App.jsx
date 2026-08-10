@@ -6,6 +6,7 @@ import {
 
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import SEOManager from "./components/SEO/SEOManager";
 
 import Accueil from "./pages/Accueil/Accueil";
 import EnSavoirPlus from "./pages/EnSavoirPlus/EnSavoirPlus";
@@ -18,7 +19,10 @@ function App() {
   return (
     <BrowserRouter>
 
+      <SEOManager />
+
       <Header />
+
 
       <main>
 
@@ -29,20 +33,24 @@ function App() {
             element={<Accueil />}
           />
 
+
           <Route
             path="/en-savoir-plus"
             element={<EnSavoirPlus />}
           />
+
 
           <Route
             path="/a-propos"
             element={<APropos />}
           />
 
+
           <Route
             path="/recrutement"
             element={<Recrutement />}
           />
+
 
           <Route
             path="/contact"
@@ -52,6 +60,7 @@ function App() {
         </Routes>
 
       </main>
+
 
       <Footer />
 

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://stmf-gestion-locative.com/sitemap.xml
